@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 100%;
+   
+  }
+  .navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #131921;
+  }
+  
+  .navbar1 .container1 img {
+    height: 86px;
+    width: auto;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+    padding: 5px;
+    width: 50%;
+  }
+  
+  .search-input {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 24px;
+  }
+  
+  .search-icon {
+    margin-left: -35px;
+    color: #333;
+  }
+  
+  .box1 {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .box1 i {
+    cursor: pointer;
+  }
+  .navbar2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #232f3e;
+    color: white;
+    padding: 10px;
+  }
+  
+  .navbar2 div {
+    cursor: pointer;
+  }
+  .navbar3 img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  .navbar4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px 0;
+  }
+  
+  .navbar4 div {
+    text-align: center;
+  }
+  
+  .navbar4 img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .navbar4 a {
+    text-decoration: none;
+    color: #007185;
+    font-weight: bold;
+  }
+  .img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px 0;
+  }
+  
+  .img img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  .navbar5 {
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .navbar6 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #232f3e;
+    padding: 20px;
+    color: white;
+  }
+  
+  .navbar6 ul {
+    list-style-type: none;
+  }
+  
+  .navbar6 h3 {
+    margin-bottom: 10px;
+  }
+  
+  .navbar6 a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar1 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search-box {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .box1 {
+      margin-top: 10px;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .navbar2 {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .navbar2 div {
+      padding: 8px;
+      text-align: center;
+      font-size: 14px;
+    }
+  
+    .navbar4 {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .navbar4 img {
+      width: 100%;
+    }
+  
+    .img {
+      grid-template-columns: 1fr;
+    }
+  
+    .navbar5 {
+      padding: 15px;
+    }
+  
+    .navbar6 {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .navbar6 ul {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar1 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search-box {
+      width: 80%;
+      margin-top: 10px;
+    }
+  
+    .box1 {
+      margin-top: 10px;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .navbar2 {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 10px;
+    }
+  
+    .navbar2 div {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .navbar4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .navbar4 img {
+      width: 100%;
+    }
+  
+    .img {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    .navbar1 {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .search-box {
+      width: 60%;
+    }
+  
+    .navbar2 {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .navbar4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .navbar5 {
+      padding: 20px;
+    }
+  
+    .navbar6 {
+      flex-direction: row;
+    }
+  
+    .navbar6 ul {
+      margin: 0;
+    }
+  }
+  
